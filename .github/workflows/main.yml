@@ -4,7 +4,7 @@ name: CI
 on:
   push:
   schedule:
-    - cron: '1 13,23 * * *'
+    - cron: '10 13,23 * * *'
 
   
 jobs:
