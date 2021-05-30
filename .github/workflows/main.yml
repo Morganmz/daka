@@ -19,7 +19,7 @@ jobs:
         - name: 'Install requirements'
           run: |
             python -m pip install --upgrade pip
-               
+            python -m pip install --requests pip   
         - name: Install ChromeDriver
           run: |
             CHROME_VERSION=$(google-chrome --version | cut -f 3 -d ' ' | cut -d '.' -f 1) \
@@ -32,9 +32,9 @@ jobs:
               && sudo chmod +x /usr/local/bin/chromedriver \
               && chromedriver --version
        
-        #- name: 'AutoClick'
+        - name: 'AutoClick'
          
-        #  run: python user.py
+          run: python user.py
         - name: 'Send mail'
           uses: dawidd6/action-send-mail@master
           with:
