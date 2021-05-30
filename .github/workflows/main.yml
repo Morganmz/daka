@@ -44,10 +44,10 @@ jobs:
           with:
             server_address: smtp.qq.com
             server_port: 465
-            username: ${{ secrets.MAIL_USERNAME }}
-            password: ${{ secrets.MAIL_PASSWORD }}
+            username: ${{ secrets.MAIL_1 }}
+            password: ${{ secrets.MAIL_2 }}
             subject: 打卡结果 (${{env.REPORT_DATE}})
             body: file://email.txt
-            to: 3460626440@qq.com
+            to: 1611164490@qq.com
             from: GitHub Actions
             content_type: text/html
