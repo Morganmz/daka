@@ -38,7 +38,7 @@ jobs:
        
         - name: 'AutoClick'
          
-          run: python autoclick.py
+          run: python user.py
         - name: 'Send mail'
           uses: dawidd6/action-send-mail@master
           with:
