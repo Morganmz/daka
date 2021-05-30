@@ -2,15 +2,12 @@
 name: CI
 
 on:
-  watch:
-    types: started
   push:
   schedule:
     - cron: '0 23 * * *'
   
 jobs:
   bot:
-  build:
     runs-on: ubuntu-latest
     steps:
         - name: 'Checkout codes'
@@ -46,7 +43,7 @@ jobs:
             username: ${{ secrets.MAIL_1 }}
             password: ${{ secrets.MAIL_2 }}
             subject: 打卡ok 
-            body: file://email.txt
+            body: success
             to: 1611164490@qq.com
             from: GitHub Actions
             content_type: text/html
