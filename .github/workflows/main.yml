@@ -45,7 +45,7 @@ jobs:
             username: ${{ secrets.MAIL_1 }}
             password: ${{ secrets.MAIL_2 }}
             subject: 打卡结果 
-            body: file://result.html
+            body: success
             to: 1611164490@qq.com
             from: GitHub Actions
             content_type: text/html
