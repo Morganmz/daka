@@ -23,7 +23,7 @@ def punchcard(username, password):
     try:
         s = requests.Session()
         s.headers.update({'Referer': 'https://ehall.jlu.edu.cn/',
-                          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'})
+                          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'})
         s.verify = False
 
         print('正在登录...')
