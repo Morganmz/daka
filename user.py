@@ -12,7 +12,7 @@ def punchcard(username, password):
         'fieldSQbj': '24',
         'fieldSQxq': '2',
         'fieldSQgyl': '28',
-        'fieldSQqsh': '2225'
+        'fieldSQqsh': '225'
     }
 
     conditions = {
